@@ -39,12 +39,17 @@ body {
   background-color: green;
 }
 
+.section-left .header-left .user {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .section-left .header-left .user img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  line-height: 90px;
-  vertical-align: middle;
 }
 
 .section-left .header-left .user p {
