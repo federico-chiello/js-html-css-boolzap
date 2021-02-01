@@ -51,3 +51,18 @@ body {
   float: right;
   background-color: violet;
 }
+
+.right .header-right{
+  height: 15%;
+  background-color: lightgreen;
+}
+
+.right .main-text{
+  height: 70%;
+  background-color: white;
+}
+
+.right .message{
+  height: 15%;
+  background-color: black;
+}
