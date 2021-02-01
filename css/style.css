@@ -103,9 +103,8 @@ body {
 
 .section-left .search input{
   width: 90%;
-  /* margin: 10px auto; */
-  padding: 5px;
-  text-align: center;
+  height: 40px;
+  padding-left: 50px;
 }
 
 .section-left .search i{
@@ -186,4 +185,19 @@ body {
 .section-right .footer{
   height: 70px;
   background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-right .footer input {
+  width: 80%;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.section-right .footer i {
+  padding: 0 30px;
+  font-size: 150%;
+  color: #b1b1b1;
 }
