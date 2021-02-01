@@ -26,17 +26,16 @@ body {
 }
 
 /* parte di sinistra  */
-.container .left {
+.container .section-left {
   width: 40%;
   height: 100%;
-  background-color: pink;
 }
 
 /* header-left */
 .section-left .header-left {
   width: 100%;
-  height: 90px;
-  background-color: green;
+  height: 70px;
+  background-color: #eaeaea;
 }
 
 .section-left .header-left .user {
@@ -49,39 +48,57 @@ body {
 .section-left .header-left .user img {
   width: 60px;
   height: 60px;
+  margin-left: 10px;
   border-radius: 50%;
 }
 
-.section-left .header-left .user p {
-  line-height: 90px;
-  vertical-align: middle;
+.section-left .header-left .user span {
+  padding-left: 10px;
 }
 
 .section-left .header-left .setting {
-  line-height: 90px;
+  line-height: 70px;
   vertical-align: middle;
 }
 
 .section-left .header-left .setting i{
+  color: #b1b1b1;
   padding-right: 10px;
 }
 
 
 /* notification */
 .section-left .notification {
-  height: 15%;
-  background-color: red;
+  height: 70px;
+  background-color: #8edafc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-left .notification i {
+  background-color: white;
+  color: #8edafc;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.section-left .notification .notifications p#notifications-desktop{
+  color: #7aa8ac;
+  text-decoration: underline;
 }
 
 /* search */
 .section-left .search {
-  height: 10%;
+  height: 50px;
   background-color: blue;
 }
 
 /* contacts */
 .section-left .contacts {
-  height: 60%;
+  height: calc(100% - 70px - 70px - 50px);
   background-color:lightblue;
 }
 
@@ -93,16 +110,16 @@ body {
 }
 
 .section-right .header-right{
-  height: 15%;
+  height: 70px;
   background-color: lightgreen;
 }
 
 .section-right .main-text{
-  height: 70%;
+  height: 460px;
   background-color: white;
 }
 
 .section-right .message{
-  height: 15%;
+  height: 70px;
   background-color: black;
 }
