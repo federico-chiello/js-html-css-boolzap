@@ -14,7 +14,6 @@ body {
   width: 80%;
   height: 600px;
   margin: 20px auto;
-  background-color: blue;
 }
 
 /* classi riutilizzabili */
@@ -143,20 +142,48 @@ body {
 .container .section-right {
   width: 60%;
   height: 100%;
-  background-color: violet;
 }
 
+/* header-right */
 .section-right .header-right{
   height: 70px;
-  background-color: lightgreen;
+  background-color: #eaeaea;
+  border-left: 1px solid #b1b1b1;
 }
 
+.section-right .header-right .user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  baseline;
+}
+
+.section-right .header-right img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.section-right .header-right .setting i{
+  line-height: 70px;
+  vertical-align: middle;
+  padding-right: 10px;
+  color: #b1b1b1;
+}
+
+/* main-text */
 .section-right .main-text{
-  height: 460px;
-  background-color: white;
+  height: calc(100% - 70px - 70px);
+  background-image: url('../img/mine.jpg');
 }
 
-.section-right .message{
+.section-right .main-text .text {
+  overflow-y: scroll;
+}
+
+/* message */
+.section-right .footer{
   height: 70px;
-  background-color: black;
+  background-color: #eaeaea;
 }
