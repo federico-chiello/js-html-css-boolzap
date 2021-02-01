@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-image: linear-gradient(#009688 20%, #d8dbd6);
+  background-image: linear-gradient(#009688 20vh, #d8dbd6 60vh);
   overflow: hidden;
 }
 
@@ -129,6 +129,10 @@ body {
   height: 70px;
   padding: 5px 0;
   border-bottom: 1px solid #b1b1b1;
+}
+
+.section-left .contacts .contact:hover {
+  background-color: #eaeaea;
 }
 
 .section-left .contacts .contact img {
