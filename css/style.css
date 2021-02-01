@@ -193,9 +193,30 @@ body {
   overflow-y: scroll;
 }
 
-/* .section-right .main-text .text {
-  overflow-y: scroll;
-} */
+.section-right .main-text .text {
+  padding: 50px;
+}
+
+.section-right .main-text .text .message {
+  position: relative;
+  min-width: 30%;
+  max-width: 70%;
+  font-size: 15px;
+  margin: 8px 0;
+  padding: 15px 15px 20px 15px;
+  border-radius: 15px;
+}
+
+.section-right .main-text .text .message.sent{
+  background-color: lightgreen;
+  clear: both;
+}
+
+.section-right .main-text .text .message.received{
+  background-color: white;
+  clear: both;
+}
+
 
 /* footer */
 .section-right .footer{
