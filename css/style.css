@@ -24,6 +24,26 @@ body {
   background-color: pink;
 }
 
+.left .header-left {
+  height: 15%;
+  background-color: green;
+}
+
+.left .notification {
+  height: 15%;
+  background-color: red;
+}
+
+.left .search {
+  height: 10%;
+  background-color: blue;
+}
+
+.left .contacts {
+  height: 60%;
+  background-color:lightblue;
+}
+
 /* parte di destra */
 .container .right {
   width: 60%;
