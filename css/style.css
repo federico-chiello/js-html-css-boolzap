@@ -33,57 +33,71 @@ body {
 }
 
 /* header-left */
-.left .header-left {
-  height: 15%;
+.section-left .header-left {
+  width: 100%;
+  height: 90px;
   background-color: green;
 }
 
-.left .header-left .user img {
-  width: 15%;
+.section-left .header-left .user img {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-}
-
-.left .header-left .setting {
-  line-height: 50%;
+  line-height: 90px;
   vertical-align: middle;
 }
 
+.section-left .header-left .user p {
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.section-left .header-left .setting {
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.section-left .header-left .setting i{
+  padding-right: 10px;
+}
+
+
 /* notification */
-.left .notification {
+.section-left .notification {
   height: 15%;
   background-color: red;
 }
 
 /* search */
-.left .search {
+.section-left .search {
   height: 10%;
   background-color: blue;
 }
 
 /* contacts */
-.left .contacts {
+.section-left .contacts {
   height: 60%;
   background-color:lightblue;
 }
 
 /* parte di destra */
-.container .right {
+.container .section-right {
   width: 60%;
   height: 100%;
   background-color: violet;
 }
 
-.right .header-right{
+.section-right .header-right{
   height: 15%;
   background-color: lightgreen;
 }
 
-.right .main-text{
+.section-right .main-text{
   height: 70%;
   background-color: white;
 }
 
-.right .message{
+.section-right .message{
   height: 15%;
   background-color: black;
 }
