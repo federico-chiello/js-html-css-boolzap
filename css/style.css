@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(#009688, 20%, #d8dbd6);
+}
+
+.container {
+  width: 80%;
+  height: 600px;
+  margin: 20px auto;
+  background-color: blue;
+}
+
+/* parte di sinistra  */
+.container .left {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-color: pink;
+}
+
+/* parte di destra */
+.container .right {
+  width: 60%;
+  height: 100%;
+  float: right;
+  background-color: violet;
+}
