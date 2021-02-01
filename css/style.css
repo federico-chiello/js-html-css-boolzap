@@ -45,11 +45,10 @@ body {
   align-items: center;
 }
 
-.section-left .header-left .user img,
-.section-left .contacts .contact img {
+.section-left .header-left .user img {
   width: 60px;
   height: 60px;
-  margin-left: 10px;
+  margin: 5px 0 0 10px;
   border-radius: 50%;
 }
 
@@ -64,7 +63,8 @@ body {
 
 .section-left .header-left .setting i{
   color: #b1b1b1;
-  padding-right: 10px;
+  padding-right: 15px;
+  font-size: 120%;
 }
 
 
@@ -84,6 +84,7 @@ body {
   padding: 10px;
   border-radius: 50%;
   margin: 0 10px;
+  font-size: 120%;
 }
 
 .section-left .notification .notifications p#notifications-desktop{
@@ -105,6 +106,7 @@ body {
   width: 90%;
   height: 40px;
   padding-left: 50px;
+  border: none;
 }
 
 .section-left .search i{
@@ -127,6 +129,13 @@ body {
   height: 70px;
   padding: 5px 0;
   border-bottom: 1px solid #b1b1b1;
+}
+
+.section-left .contacts .contact img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  border-radius: 50%;
 }
 
 .section-left .contacts .contact:last-child {
@@ -154,32 +163,39 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:  baseline;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.section-right .header-right .user p:last-child {
+  color: #b1b1b1;
 }
 
 .section-right .header-right img {
   width: 60px;
   height: 60px;
-  margin: 0 10px;
+  margin: 5px 10px 0 10px;
   border-radius: 50%;
 }
 
 .section-right .header-right .setting i{
   line-height: 70px;
   vertical-align: middle;
-  padding-right: 10px;
+  padding-right: 15px;
   color: #b1b1b1;
+  font-size: 120%;
 }
 
 /* main-text */
 .section-right .main-text{
   height: calc(100% - 70px - 70px);
   background-image: url('../img/mine.jpg');
-}
-
-.section-right .main-text .text {
   overflow-y: scroll;
 }
+
+/* .section-right .main-text .text {
+  overflow-y: scroll;
+} */
 
 /* message */
 .section-right .footer{
@@ -194,10 +210,11 @@ body {
   width: 80%;
   height: 50px;
   padding-left: 20px;
+  border: none;
 }
 
 .section-right .footer i {
   padding: 0 30px;
   font-size: 150%;
-  color: #b1b1b1;
+  color: #6b7376;
 }
