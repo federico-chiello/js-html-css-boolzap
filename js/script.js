@@ -111,12 +111,13 @@ var app = new Vue ({
   },
   methods: {
     scegliContatto(index){
-      if (this.contatore < (this.contacts.length - 1)) {
+      this.contatore = index;
+      if (this.contatore < (this.contacts.length)) {
         this.adressee = [];
         this.adressee.push(this.contacts[index]);
         console.log(this.adressee);
-        console.log(this.contatore);
       }
+      console.log(this.contatore);
     }
 
   }
