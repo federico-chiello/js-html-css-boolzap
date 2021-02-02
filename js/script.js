@@ -107,7 +107,8 @@ var app = new Vue ({
         ],
       }
     ],
-    adressee:[]
+    adressee:[],
+    conversation:[]
   },
   methods: {
     scegliContatto(index){
@@ -118,6 +119,7 @@ var app = new Vue ({
         // console.log(this.adressee);
       }
       // console.log(this.contatore);
+      
     }
   }
 });

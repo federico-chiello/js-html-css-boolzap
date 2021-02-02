@@ -66,12 +66,14 @@
       </div>
       <!-- main-text -->
       <div class="main-text">
-        <div class="text">
-          <div class="message sent active right">
-
+        <div class="text" v-for="(element, index) in contacts">
+          <div class="message sent active right" v-for="item in element.messages">
+            {{ item.text }}
+            {{item.status}}
           </div>
-          <div class="message received active left">
-
+          <div class="message received active left" v-for="item in element.messages">
+            {{ item.text }}
+            {{item.status}}
           </div>
           <!-- <div class="message sent right">
             Vorresti andare al cinema?
