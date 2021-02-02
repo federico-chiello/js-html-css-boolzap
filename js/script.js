@@ -5,8 +5,12 @@
 var app = new Vue ({
   el: '#boolzap',
   data: {
-    name: 'Sofia',
-    image: 'img/avatar_io.jpg',
+    sender: [
+      {
+        name: 'Sofia',
+        image: 'img/avatar_io.jpg',
+      }
+    ],
     contacts: [
       {
         name: 'Lorenzo',

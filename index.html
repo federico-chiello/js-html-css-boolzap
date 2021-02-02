@@ -15,9 +15,9 @@
     <div class="section-left left">
       <!-- header -->
       <div class="header-left">
-        <div class="user left">
-          <img :src="image" alt="">
-          <span><strong>{{name}}</strong></span>
+        <div class="user left" v-for="element in sender">
+          <img :src="element.image" alt="">
+          <span><strong>{{ element.name }}</strong></span>
           <!-- <img src="img/avatar_io.jpg" alt="" >
           <span><strong>Nome Utente</strong></span> -->
         </div>
