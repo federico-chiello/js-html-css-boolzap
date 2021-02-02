@@ -15,10 +15,9 @@
     <div class="section-left left">
       <!-- header -->
       <div class="header-left">
-        <div class="user left" v-for="user in users">
-
-          <img src="" alt="">
-          <span><strong>{{ user }}</strong></span>
+        <div class="user left">
+          <img :src="avatar" alt="">
+          <span><strong>{{name}}</strong></span>
           <!-- <img src="img/avatar_io.jpg" alt="" >
           <span><strong>Nome Utente</strong></span> -->
         </div>
@@ -47,7 +46,7 @@
           <img src="img/avatar_1.jpg" alt="" class="left">
           <span class="left"><strong>Lorenzo</strong></span>
         </div>
-        <div class="contact">
+        <!-- <div class="contact">
           <img src="img/avatar_2.jpg" alt="" class="left">
           <span class="left"><strong>Francesco</strong></span>
         </div>
@@ -58,23 +57,7 @@
         <div class="contact">
           <img src="img/avatar_4.jpg" alt="" class="left">
           <span class="left"><strong>Riccardo</strong></span>
-        </div>
-        <div class="contact">
-          <img src="img/avatar_1.jpg" alt="" class="left">
-          <span class="left"><strong>Alberto</strong></span>
-        </div>
-        <div class="contact">
-          <img src="img/avatar_2.jpg" alt="" class="left">
-          <span class="left"><strong>Giovanni</strong></span>
-        </div>
-        <div class="contact">
-          <img src="img/avatar_3.jpg" alt="" class="left">
-          <span class="left"><strong>Federico</strong></span>
-        </div>
-        <div class="contact">
-          <img src="img/avatar_4.jpg" alt="" class="left">
-          <span class="left"><strong>Roberto</strong></span>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- / parte di sinistra -->
