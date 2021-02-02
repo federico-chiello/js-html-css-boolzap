@@ -111,18 +111,15 @@ var app = new Vue ({
   },
   methods: {
     scegliContatto(index){
-      // this.contatore = index;
-      if (this.contatore = index) {
+      if (this.contatore < (this.contacts.length - 1)) {
         this.adressee = [];
         this.adressee.push(this.contacts[index]);
         console.log(this.adressee);
+        console.log(this.contatore);
       }
-      console.log(this.contatore);
-      // if (index == 0) {
-      //   this.adressee.push(this.contacts[0])
-      //   console.log(this.adressee);
-      // }
     }
 
   }
+
+
 });
