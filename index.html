@@ -10,14 +10,17 @@
   <title>Boolzap</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="boolzap">
     <!-- parte di sinistra -->
     <div class="section-left left">
       <!-- header -->
       <div class="header-left">
-        <div class="user left">
-          <img src="img/avatar_io.jpg" alt="" >
-          <span><strong>Nome Utente</strong></span>
+        <div class="user left" v-for="user in users">
+
+          <img src="" alt="">
+          <span><strong>{{ user }}</strong></span>
+          <!-- <img src="img/avatar_io.jpg" alt="" >
+          <span><strong>Nome Utente</strong></span> -->
         </div>
         <div class="setting right">
           <i class="fas fa-circle-notch"></i>
