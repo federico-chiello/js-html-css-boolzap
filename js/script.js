@@ -6,11 +6,11 @@ var app = new Vue ({
   el: '#boolzap',
   data: {
     name: 'Sofia',
-    avatar: 'img/avatar_io.jpg',
+    image: 'img/avatar_io.jpg',
     contacts: [
       {
         name: 'Lorenzo',
-        avatar: '_1',
+        avatar: 'img/avatar_1.jpg',
         visible: true,
         messages: [
           {
@@ -32,7 +32,7 @@ var app = new Vue ({
       },
       {
         name: 'Francesco',
-        avatar: '_2',
+        avatar: 'img/avatar_2.jpg',
         visible: true,
         messages: [
           {
@@ -59,7 +59,7 @@ var app = new Vue ({
       },
       {
         name: 'Alessio',
-        avatar: '_3',
+        avatar: 'img/avatar_3.jpg',
         visible: true,
         messages: [
           {
@@ -81,7 +81,7 @@ var app = new Vue ({
       },
       {
         name: 'Riccardo',
-        avatar: '_4',
+        avatar: 'img/avatar_4.jpg',
         visible: true,
         messages: [
           {

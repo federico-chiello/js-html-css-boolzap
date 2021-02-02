@@ -16,7 +16,7 @@
       <!-- header -->
       <div class="header-left">
         <div class="user left">
-          <img :src="avatar" alt="">
+          <img :src="image" alt="">
           <span><strong>{{name}}</strong></span>
           <!-- <img src="img/avatar_io.jpg" alt="" >
           <span><strong>Nome Utente</strong></span> -->
@@ -42,10 +42,14 @@
       </div>
       <!-- contacts -->
       <div class="contacts">
-        <div class="contact">
+        <div class="contact" v-for="element in contacts">
+          <img :src="element.avatar" alt="" class="left">
+          <span class="left"><strong>{{ element.name }}</strong></span>
+        </div>
+        <!-- <div class="contact">
           <img src="img/avatar_1.jpg" alt="" class="left">
           <span class="left"><strong>Lorenzo</strong></span>
-        </div>
+        </div> -->
         <!-- <div class="contact">
           <img src="img/avatar_2.jpg" alt="" class="left">
           <span class="left"><strong>Francesco</strong></span>
