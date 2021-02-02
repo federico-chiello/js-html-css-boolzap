@@ -216,12 +216,24 @@ body {
 .section-right .main-text .text .message.sent{
   background-color: lightgreen;
   clear: both;
+  display: none;
+}
+
+.section-right .main-text .text .message.sent.active {
+  display:block;
 }
 
 .section-right .main-text .text .message.received{
   background-color: white;
   clear: both;
+  display: none;
 }
+
+.section-right .main-text .text .message.received.active {
+  display:block;
+}
+
+
 
 /* footer */
 .section-right .footer{
