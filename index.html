@@ -42,7 +42,7 @@
       </div>
       <!-- contacts -->
       <div class="contacts">
-        <div class="contact" v-for="element in contacts">
+        <div class="contact" v-for="(element, index) in contacts" @click="scegliContatto(index)">
           <img :src="element.avatar" alt="" class="left">
           <span class="left"><strong>{{ element.name }}</strong></span>
         </div>
@@ -69,6 +69,18 @@
     <div class="section-right right">
       <!-- header -->
       <div class="header-right">
+        <img :src="element.avatar" alt="" class="left" v-for="(element, index) in adressee">
+        <div class="user left" v-for="(element, index) in adressee">
+          <p><strong>{{ element.name }}</strong></p>
+          <p>Ultimo accesso oggi alle</p>
+        </div>
+        <div class="setting right">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-paperclip"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <!-- <div class="header-right">
         <img src="img/avatar_1.jpg" alt="" class="left">
         <div class="user left">
           <p><strong>Lorenzo</strong></p>
@@ -79,7 +91,7 @@
           <i class="fas fa-paperclip"></i>
           <i class="fas fa-ellipsis-v"></i>
         </div>
-      </div>
+      </div> -->
       <!-- main-text -->
       <div class="main-text">
         <div class="text">
