@@ -67,11 +67,11 @@
       <!-- main-text -->
       <div class="main-text">
         <div class="text" v-for="(element, index) in contacts">
-          <div class="message sent active right" v-for="item in element.messages">
+          <div class="message  sent right" v-for="(item, index) in element.messages" :class="(index == contatore && status == 'sent') ? 'active' : ''">
             {{ item.text }}
             {{item.status}}
           </div>
-          <div class="message received active left" v-for="item in element.messages">
+          <div class="message  received left" v-for="(item, index) in element.messages" :class="(index == contatore && status == 'received') ? 'active' : ''">
             {{ item.text }}
             {{item.status}}
           </div>

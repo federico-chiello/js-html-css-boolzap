@@ -87,7 +87,7 @@ var app = new Vue ({
       {
         name: 'Riccardo',
         avatar: 'img/avatar_4.jpg',
-        visible: true,
+        visible:true,
         messages: [
           {
             date: '23/05/2021 10:00:00',
@@ -119,7 +119,8 @@ var app = new Vue ({
         // console.log(this.adressee);
       }
       // console.log(this.contatore);
-      
+
+
     }
   }
 });
