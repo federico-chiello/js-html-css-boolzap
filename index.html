@@ -69,6 +69,9 @@
         <div class="text">
           <div class="message active" :class="item.status" v-for="(item, index) in contacts[contatore].messages" >
             {{ item.text }}
+            <div class="date">
+              {{item.date}}
+            </div>
           </div>
           <!-- <div class="message sent right">
             Vorresti andare al cinema?

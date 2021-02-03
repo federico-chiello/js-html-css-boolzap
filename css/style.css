@@ -218,7 +218,9 @@ body {
   clear: both;
   float: right;
   display: none;
+  position: relative;
 }
+
 
 .section-right .main-text .text .message.sent.active {
   display:block;
@@ -235,6 +237,13 @@ body {
   display:block;
 }
 
+.section-right .main-text .text .message .date {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  color: #6b7376;
+  font-size: 10px;
+}
 
 
 /* footer */
