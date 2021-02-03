@@ -53,9 +53,9 @@
     <div class="section-right right">
       <!-- header -->
       <div class="header-right">
-        <img :src="element.avatar" alt="" class="left" v-for="(element, index) in adressee">
-        <div class="user left" v-for="(element, index) in adressee">
-          <p><strong>{{ element.name }}</strong></p>
+        <img :src="contacts[contatore].avatar" alt="" class="left">
+        <div class="user left" >
+          <p><strong>{{ contacts[contatore].name }}</strong></p>
           <p>Ultimo accesso oggi alle</p>
         </div>
         <div class="setting right">
@@ -66,14 +66,9 @@
       </div>
       <!-- main-text -->
       <div class="main-text">
-        <div class="text" v-for="(element, index) in contacts">
-          <div class="message  sent right" v-for="(item, index) in element.messages" :class="(index == contatore && status == 'sent') ? 'active' : ''">
+        <div class="text">
+          <div class="message active" :class="item.status" v-for="(item, index) in contacts[contatore].messages" >
             {{ item.text }}
-            {{item.status}}
-          </div>
-          <div class="message  received left" v-for="(item, index) in element.messages" :class="(index == contatore && status == 'received') ? 'active' : ''">
-            {{ item.text }}
-            {{item.status}}
           </div>
           <!-- <div class="message sent right">
             Vorresti andare al cinema?

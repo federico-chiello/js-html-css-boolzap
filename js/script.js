@@ -107,20 +107,17 @@ var app = new Vue ({
         ],
       }
     ],
-    adressee:[],
-    conversation:[]
+
   },
   methods: {
     scegliContatto(index){
       this.contatore = index;
-      if (this.contatore < this.contacts.length) {
-        this.adressee = [];
-        this.adressee.push(this.contacts[index]);
-        // console.log(this.adressee);
-      }
+      // if (this.contatore < this.contacts.length) {
+      //   this.adressee = [];
+      //   this.adressee.push(this.contacts[index]);
+      //   // console.log(this.adressee);
+      // }
       // console.log(this.contatore);
-
-
     }
   }
 });

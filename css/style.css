@@ -216,6 +216,7 @@ body {
 .section-right .main-text .text .message.sent{
   background-color: lightgreen;
   clear: both;
+  float: right;
   display: none;
 }
 
@@ -226,6 +227,7 @@ body {
 .section-right .main-text .text .message.received{
   background-color: white;
   clear: both;
+  float: left;
   display: none;
 }
 
