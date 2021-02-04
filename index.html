@@ -42,7 +42,7 @@
       </div>
       <!-- contacts -->
       <div class="contacts">
-        <div class="contact" v-for="(element, index) in contacts" @click="scegliContatto(index)">
+        <div class="contact" v-for="(element, index) in contacts" @click="chooseContact(index)">
           <img :src="element.avatar" alt="" class="left">
           <span class="left"><strong>{{ element.name }}</strong></span>
         </div>
@@ -53,9 +53,9 @@
     <div class="section-right right">
       <!-- header -->
       <div class="header-right">
-        <img :src="contacts[contatore].avatar" alt="" class="left">
+        <img :src="contacts[counter].avatar" alt="" class="left">
         <div class="user left" >
-          <p><strong>{{ contacts[contatore].name }}</strong></p>
+          <p><strong>{{ contacts[counter].name }}</strong></p>
           <p>Ultimo accesso oggi alle</p>
         </div>
         <div class="setting right">
@@ -67,7 +67,7 @@
       <!-- main-text -->
       <div class="main-text">
         <div class="text">
-          <div class="message active" :class="item.status" v-for="(item, index) in contacts[contatore].messages" >
+          <div class="message active" :class="(item.status == 'received') ? 'received' : 'sent'" v-for="(item, index) in contacts[counter].messages" >
             {{ item.text }}
             <div class="date">
               {{item.date}}
@@ -87,7 +87,7 @@
       <!-- footer -->
       <div class="footer">
         <i class="far fa-smile"></i>
-        <input type="text" name="text" placeholder="Scrivi un messaggio">
+        <input type="text" name="text" placeholder="Scrivi un messaggio" @keyup.enter="sendMessage" v-model="messageUser">
         <i class="fas fa-microphone"></i>
       </div>
     </div>

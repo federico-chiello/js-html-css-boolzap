@@ -5,7 +5,6 @@
 var app = new Vue ({
   el: '#boolzap',
   data: {
-    contatore: 0,
     sender: [
       {
         name: 'Sofia',
@@ -107,17 +106,28 @@ var app = new Vue ({
         ],
       }
     ],
+    counter: 0,
+    messageUser: ''
 
   },
   methods: {
-    scegliContatto(index){
-      this.contatore = index;
+    chooseContact(index){
+      this.counter = index;
       // if (this.contatore < this.contacts.length) {
       //   this.adressee = [];
       //   this.adressee.push(this.contacts[index]);
       //   // console.log(this.adressee);
       // }
       // console.log(this.contatore);
+    },
+    sendMessage(){
+      this.contacts[this.counter].messages.push({ text: this.messageUser});
+      this.messageUser = '';
+      setTimeout(this.receivedMessage,1000);
+    },
+    receivedMessage() {
+      this.contacts[this.counter].messages.push({text: 'ok', status: 'received'});
     }
+
   }
 });
