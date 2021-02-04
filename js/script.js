@@ -136,9 +136,12 @@ var app = new Vue ({
       this.contacts[this.counter].messages.push({text: 'ok', date: '18:35', status: 'received'});
     },
     searchUsers(){
-      forEach((item) => {
+      this.contacts.forEach((item, e) => {
         const {name} = item;
+        
       });
+
+
 
     }
 
