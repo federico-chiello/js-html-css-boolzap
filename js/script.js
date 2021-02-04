@@ -121,12 +121,12 @@ var app = new Vue ({
       // console.log(this.contatore);
     },
     sendMessage(){
-      this.contacts[this.counter].messages.push({ text: this.messageUser});
+      this.contacts[this.counter].messages.push({ text: this.messageUser, date: '18:30'});
       this.messageUser = '';
       setTimeout(this.receivedMessage,1000);
     },
     receivedMessage() {
-      this.contacts[this.counter].messages.push({text: 'ok', status: 'received'});
+      this.contacts[this.counter].messages.push({text: 'ok', date: '18:35', status: 'received'});
     }
 
   }
