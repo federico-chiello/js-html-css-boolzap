@@ -137,7 +137,7 @@ var app = new Vue ({
     },
     searchUsers(){
       this.contacts.forEach((item) => {
-      
+
       });
     }
 
