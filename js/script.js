@@ -115,7 +115,8 @@ var app = new Vue ({
     ],
     counter: 0,
     messageUser: '',
-    textUser: ''
+    textUser: '',
+    searchContact: ''
   },
   methods: {
     chooseContact(index){
@@ -136,10 +137,15 @@ var app = new Vue ({
       this.contacts[this.counter].messages.push({text: 'Ok', date: moment().calendar(), status: 'received'});
     },
     searchUsers(){
-      this.contacts.forEach((item) => {
+      this.contacts.forEach((element) => {
+        // Metodo con l'indexOf.
+        this.searchContact = element.name.toLowerCase();
+        (this.searchContact.indexOf(this.textUser.toLowerCase())> - 1)  ? element.visible = true : element.visible = false;
 
+        // Metodo con il substring.
+        // this.searchContact = element.name.toLowerCase().substring(0, element.name.length);
+        // (this.searchContact.includes(this.textUser.toLowerCase()) == true) ? element.visible = true : element.visible = false;
       });
     }
-
   }
 });

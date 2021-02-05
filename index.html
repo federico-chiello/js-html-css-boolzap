@@ -44,7 +44,7 @@
       </div>
       <!-- contacts -->
       <div class="contacts">
-        <div class="contact" v-for="(element, index) in contacts" @click="chooseContact(index)" :class="(element.visible == 'false') ? 'true' : 'false'">
+        <div class="contact" v-for="(element, index) in contacts" @click="chooseContact(index)"  v-if="element.visible == true">
           <img :src="element.avatar" alt="" class="left">
           <span class="left"><strong>{{ element.name }}</strong></span>
         </div>
