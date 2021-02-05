@@ -74,17 +74,17 @@ var app = new Vue ({
         visible: true,
         messages: [
           {
-            date: '24/03/2021 17:10:00',
+            date: '24/01/2021 17:10:00',
             text: 'Stasera andiamo in pizzaeria?',
             status: 'received'
           },
           {
-            date: '24/03/2021 17:13:20',
+            date: '24/01/2021 17:13:20',
             text: 'Oggi non mi sento tanto bene. Ho la febbre.',
             status: 'sent'
           },
           {
-            date: '24/03/2021 17:15:08',
+            date: '24/01/2021 17:15:08',
             text: 'Mi dispiace. Buona guarigione.',
             status: 'received'
           }
@@ -96,17 +96,17 @@ var app = new Vue ({
         visible:true,
         messages: [
           {
-            date: '23/05/2021 10:00:00',
+            date: '02/02/2021 10:00:00',
             text: 'Hai superato l\'ultimo esame?',
             status: 'sent'
           },
           {
-            date: '23/05/2021 10:03:30',
+            date: '02/02/2021 10:03:30',
             text: 'Si, ho sostenuto tutti gli esami del corso. Dalla prossima settimana inizierò la tesi di laurea.',
             status: 'received'
           },
           {
-            date: '23/05/2021 10:04:10',
+            date: '02/02/2021 10:04:10',
             text: 'Benissimo. Ti faccio tanti auguri!',
             status: 'sent'
           }
