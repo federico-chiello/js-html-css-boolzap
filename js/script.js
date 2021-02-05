@@ -14,8 +14,8 @@ var app = new Vue ({
   data: {
     sender: [
       {
-        name: 'Sofia',
-        image: 'img/avatar_io.jpg',
+        name: 'Federico',
+        image: 'img/avatar_2.jpg'
       }
     ],
     contacts: [
@@ -42,8 +42,8 @@ var app = new Vue ({
         ],
       },
       {
-        name: 'Francesco',
-        avatar: 'img/avatar_2.jpg',
+        name: 'Giulia',
+        avatar: 'img/avatar_io.jpg',
         visible: true,
         messages: [
           {
@@ -114,8 +114,8 @@ var app = new Vue ({
       }
     ],
     counter: 0,
-    messageUser: ''
-
+    messageUser: '',
+    textUser: ''
   },
   methods: {
     chooseContact(index){
@@ -128,21 +128,17 @@ var app = new Vue ({
       // console.log(this.contatore);
     },
     sendMessage(){
-      this.contacts[this.counter].messages.push({ text: this.messageUser, date: '18:30'});
+      this.contacts[this.counter].messages.push({ text: this.messageUser, date: moment().calendar()});
       this.messageUser = '';
       setTimeout(this.receivedMessage,1000);
     },
     receivedMessage() {
-      this.contacts[this.counter].messages.push({text: 'ok', date: '18:35', status: 'received'});
+      this.contacts[this.counter].messages.push({text: 'Ok', date: moment().calendar(), status: 'received'});
     },
     searchUsers(){
-      this.contacts.forEach((item, e) => {
-        const {name} = item;
-        
+      this.contacts.forEach((item) => {
+      
       });
-
-
-
     }
 
   }
